@@ -1,0 +1,105 @@
+#video-tag {
+    .container {
+        #carouselExampleIndicators {
+            .carousel-item {
+                position: relative;
+                .play-button {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    bottom: 13px;
+                    background: rgba(0, 0, 0, 0.244);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: fit-content;
+                        cursor: pointer;
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                }
+             
+            }
+        }
+    }
+}
+.dining-detail{
+    .information-img {
+        align-items: flex-start!important;
+        .infomation-detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 60px;
+            .hour {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap:24px;
+                .-font-400-15{
+                    padding: 0!important;
+                }
+                .dinner {
+                    padding-left: 14px;
+    
+                    .-font-600-15 {
+                        list-style: disc;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 150%;
+                        padding-bottom: 12px;
+                    }
+                    time {
+                        li {
+                             list-style: none !important;
+                            color: black!important;
+                            font-size: 15px;
+                            font-weight: 400!important;
+                            list-style: 150%;
+                         }
+                     }
+                }
+            }
+            .menu{
+                h3{
+                padding-bottom: 32px;
+
+                }
+                ul{
+                    padding-left: 14px;
+                    li:first-child{
+                        padding-bottom: 24px;
+                      
+                    }
+                    li{
+                        list-style: disc;
+                        color: $main-color;
+                    }
+                    a{
+                        color: $main-color;
+                        text-decoration: underline;
+                    }
+                }
+            }   
+        }
+    }
+    
+}
+.dining-main{
+    .container{
+        .condos-detail{
+            .button:hover{
+                .-button-submit{
+                    color: $main-color !important;
+                }
+                
+            }
+           
+        }
+    }
+}

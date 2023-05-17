@@ -1,0 +1,94 @@
+.-font-400-14 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #262626;
+}
+.-font-400-15 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #ffffff;
+}
+.-font-500-14 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #262626;
+}
+.-font-700-16 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #0b7dc2;
+}
+.-font-700-34 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #262626;
+}
+.-font-700-48 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.-font-600-16 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #0b7dc2;
+}
+
+.-button-submit {
+    padding: 14px 24px;
+    background: #0b7dc2;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 1px solid $main-color;
+    transition: all 0.3s linear;
+    &:hover {
+        background: white;
+        color: $main-color!important;
+        border-color: $main-color;
+        transition: all 0.3s linear;
+        
+    }
+}
+.view-detail{
+    background: white;
+    color: $main-color;
+      &:hover{
+        background:$main-color;
+        color: white !important;
+        border-color: $main-color;
+      }
+  }
+.-bg-main {
+    background: #0b7dc2;
+    opacity: 0.05;
+}
+
+.-bg-secondary {
+    background: #c0c0c0;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1240px;
+    }
+}

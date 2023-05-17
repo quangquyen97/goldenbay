@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyndham Danang Golden Bay</title>
+<link rel="icon" type="image/x-icon" href="assets/img/logo-main.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/libs/owlCarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/libs/owlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/datePicker/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/libs/mmenu/dist/mmenu.css">
+
+</head>
+
+<body>
+    <header class="sticky">
+        <div id="wrapper">
+            <div class="top-header-bar ">
+                <div class="container">
+                    <div class="name-hotel">
+                        <a href="#" class="-font-400-14">Wyndham Danang Golden Bay</a>
+                    </div>
+                    <div class="top-side-bar">
+                        <div class="new">
+                            <a href="news.html" class="-font-400-14">New</a>
+                            <a href="contact.html" class="-font-400-14">Contact</a>
+                            <div class="language">
+                                <div class="flag">
+                                    <a href="#"><img id="flag-img" src="assets/img/England-flag.svg"
+                                            alt="England flag"></a>
+                                </div>
+                                <div class="lang">
+                                    <select name="" id="language" onchange="handleChangeLang()">
+                                        <option value="ENG">EN</option>
+                                        <option value="VN">VN</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="logo-main-header">
+                     <a href="index.html"><img src="assets/img/logo-main.png" alt="logo main"></a>
+
+                </div>
+
+                <div class="nav-menu-header">
+                    <ul class="sub-menu-pc">
+                        <li><a class="-font-400-14" href="about.html">About</a>
+                            <ul class="sub-list">
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><a href="#">More</a>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        </li>
+                        <li><a class="-font-400-14" href="accomodation.html">Accommodation</a>
+                            <ul class="sub-list">
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a class="-font-400-14" href="facilitie.html">Facilities & Services</a>
+                            <ul class="sub-list">
+                                <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="-font-400-14" href="dining.html">Dinning</a>
+                            <ul class="sub-list">
+                                <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="-font-400-14" href="spa.html">Spa & Wellness</a>
+                            <ul class="sub-list">
+                                <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a class="-font-400-14" href="meeting.html">Meeting & Event</a>
+                            <ul class="sub-list">
+                                <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a class="-font-400-14" href="special-offer.html">Special Offers</a>
+                            <ul class="sub-list">
+                                <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <i class="fa-solid fa-chevron-right more-icon"></i>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li><a class="non-child-menu" href="#">Item menu</a></li>
+                                <li class="more"><a href="#">More</a>
+                                    <ul class="sub-menu-2nd">
+                                        <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                        <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="-button-submit">
+                                book now
+                            </a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="page">
+        <div id="header">
+
+            <div class="container">
+                <div class="logo-main-header">
+                    <a href="index.html"><img src="assets/img/logo-main.png" alt="logo main"></a>
+
+                </div>
+                <div class="toggle">
+                    <div class="language">
+                        <div class="flag">
+                            <a href="#"><img id="flag-img" src="assets/img/England-flag.svg" alt="England flag"></a>
+                        </div>
+                        <div class="lang">
+                            <select name="" id="language" onchange="handleChangeLang()">
+                                <option value="ENG">EN</option>
+                                <option value="VN">VN</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <a href="#menu" class="fa fa-bars"></a>
+                </div>
+            </div>
+
+
+        </div>
+        <nav id="menu">
+
+            <ul class="sub-menu-pc" id="panel-menu">
+                <li><a class="-font-400-14" href="about.html">About</a>
+                    <ul class="sub-list">
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li class="more"><a href="#">More</a>
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li><a class="-font-400-14" href="accomodation.html">Accommodation</a>
+                    <ul class="sub-list">
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a class="-font-400-14" href="facilitie.html">Facilities & Services</a>
+                    <ul class="sub-list">
+                        <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="-font-400-14" href="dining.html">Dinning</a>
+                    <ul class="sub-list">
+                        <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="-font-400-14" href="spa.html">Spa & Wellness</a>
+                    <ul class="sub-list">
+                        <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a class="-font-400-14" href="meeting.html">Meeting & Event</a>
+                    <ul class="sub-list">
+                        <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a class="-font-400-14" href="special-offer.html">Special Offers</a>
+                    <ul class="sub-list">
+                        <li><a class="non-child-menu" href="#">Item menudaddad</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li><a class="non-child-menu" href="#">Item menu</a></li>
+                        <li class="more"><a href="#">More</a>
+                            <ul class="sub-menu-2nd">
+                                <li><a class="child-menu-2nd" href="#">VIP Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">President Room</a></li>
+                                <li><a class="child-menu-2nd" href="#">Normal Room</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a class="-font-400-14" href="news.html">News</a>
+                
+                </li>
+                <li><a class="-font-400-14" href="contact.html">Contact</a>
+                   
+                </li>
+                <li><a href="contact.html" class="-button-submit">
+                        book now
+                    </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="carousel-main" id="contact-main">
+        <div id="carouselExampleIndicators" class="">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/about/bg-main-2.svg" class="img-fluid" alt="main image background">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="carousel-content">
+                <div class="main-name">
+
+                    <h1 class="-font-700-48">
+                        Contact us
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-content">
+        <div class="container">
+            <p>Please leave your contact details and message below and a member of our team will respond to you promptly</p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <div class="container">
+            <form action="submit">
+                <div class="full-name-input form">
+                    <label for="full-name">Full Name (*)</label>
+                    <input name="full-name" placeholder="Enter your full name" type="text">
+                </div>
+                <div class="email-input form">
+                    <label for="full-name">Email (*)</label>
+                    <input name="full-name"placeholder="Enter your full email" type="email">
+                </div>
+                <div class="phone-input form">
+                    <label for="full-name">Phone Number (*)</label>
+                    <input name="full-name" placeholder="Enter your full phone number" type="number">
+                </div>
+                <div class="message form">
+                    <label for="full-name">Message (*)</label>
+                    <textarea name="full-name" placeholder="Enter your message"  type="text"></textarea>
+
+                </div>
+                <div class="button-submit-form">
+                    <div class="-button-submit">
+                        send now
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="map">
+        <div class="content">
+            <h3 class="-font-700-24">
+                get in touch
+            </h3>
+            <div class="address">
+                <img src="assets/img/location-icon.svg" alt="location icon">
+                <p class="-font-400-15">Le Van Duyet Street, Nai Hien Dong, Son Tra, Da Nang City</p>
+            </div>
+            <div class="email">
+                <img src="assets/img/email-icon.svg" alt="email icon">
+                <p class="-font-400-15">info@wyndhamdananggoldenbay.com </p>
+            </div>
+            <div class="phone-number">
+                <img src="assets/img/phone-icon.svg" alt="phone icon">
+                <p class="-font-400-15">
+                    (+84) 236 3 878 999
+                </p>
+            </div>
+        </div>
+        <div class="gg-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.367715986463!2d108.22249296497749!3d16.09826799293481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142180fe0af6541%3A0x7286a33cefda8ba!2sWyndham%20Danang%20Golden%20Bay!5e0!3m2!1svi!2s!4v1680486766417!5m2!1svi!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="footer-search">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="assets/img/logo-main.png" alt="logo main"></a>
+                </div>
+                <div class="search-group">
+                    <h5>newsletter!</h5>
+                    <div class="search-layout">
+                        <input type="text" placeholder="Enter your email">
+                        <button class="-button-submit send-button">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.7825 0.217449C17.6813 0.116704 17.5534 0.046952 17.4139 0.0163941C17.2744 -0.0141638 17.1291 -0.00425713 16.995 0.0449493L0.495001 6.04495C0.352702 6.09892 0.230191 6.19491 0.143739 6.32016C0.0572872 6.44542 0.0109863 6.59401 0.0109863 6.7462C0.0109863 6.89839 0.0572872 7.04698 0.143739 7.17223C0.230191 7.29749 0.352702 7.39348 0.495001 7.44745L6.9375 10.0199L11.6925 5.24995L12.75 6.30745L7.9725 11.0849L10.5525 17.5275C10.6081 17.667 10.7043 17.7866 10.8286 17.8709C10.953 17.9551 11.0998 18.0001 11.25 17.9999C11.4016 17.9968 11.5486 17.9479 11.6718 17.8595C11.795 17.7711 11.8885 17.6475 11.94 17.5049L17.94 1.00495C17.9911 0.872257 18.0034 0.727772 17.9755 0.588342C17.9477 0.448912 17.8807 0.320282 17.7825 0.217449Z"
+                                    fill="white" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav-bar">
+                <ul>
+                    <li><a href="#" class="-font-500-14">About</a></li>
+                    <li><a href="#" class="-font-500-14">Accommodation</a></li>
+                    <li><a href="#" class="-font-500-14">Facilities & Services</a></li>
+                    <li><a href="#" class="-font-500-14">Dinning</a></li>
+                    <li><a href="#" class="-font-500-14">Spa & Wellness</a></li>
+                    <li><a href="#" class="-font-500-14">Meeting & Event</a></li>
+                    <li><a href="#" class="-font-500-14">Special Offers</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <div class="get-in-touch">
+                    <h5>Get In Touch</h5>
+                    <ul class="adress">
+                        <li>
+                            <a href="#" class="-font-400-14 d-flex align-items-start"><img
+                                    src="assets/img/location-icon.svg" alt="location icon">
+                                <p>Le Van Duyet Street, Nai Hien Dong, Son Tra, Da Nang City</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="-font-400-14"><img src="assets/img/mail-icon.svg"
+                                    alt="mail icon"><p>info@wyndhamdananggoldenbay.com </p></a>
+                        </li>
+                        <li>
+                            <a href="#" class="-font-400-14"><img src="assets/img/phone-icon.svg" alt="phone icon"><p>(+84)
+                                236 3 878
+                                999</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="connect-with-us">
+                    <h5>Connect with us</h5>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="assets/img/facebook-icon.svg" alt="facebook icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/img/twitter-icon.svg" alt="twitter icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/img/youtube-icon.svg" alt="youtube icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/img/instagram-icon.svg" alt="instagram icon"></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="-font-400-14">
+                    © Copyright 2023. Wyndham Danang Golden Bay. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- JS -->
+    <script src="assets/libs/jquery-3.6.4.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/owlCarousel/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/libs/datePicker/js/jquery-ui.js"></script>
+    <script src="assets/libs/datePicker/js/jquery-ui.min.js"></script>
+    <script src="assets/libs/mmenu/dist/mmenu.js"></script>
+
+</body>
+
+</html>

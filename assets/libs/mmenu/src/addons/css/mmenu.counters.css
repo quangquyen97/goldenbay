@@ -1,0 +1,9 @@
+.mm-counter {
+  display: block;
+  padding-inline-start: 20px;
+  float: right;
+  color: var(--mm-color-text-dimmed);
+}
+[dir=rtl] .mm-counter {
+  float: left;
+}/*# sourceMappingURL=mmenu.counters.css.map */

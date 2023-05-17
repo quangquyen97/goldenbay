@@ -1,0 +1,66 @@
+#facilities{
+    .container{
+        bottom: 40%;
+        transform: translateY(50%);
+        .carousel-content{
+            gap: 40px;
+            .main-name{
+                padding-top: 0;
+                h1{
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+.deluxe-goldenbay , .executive{
+    background-color: white!important;
+    padding:40px 0;
+    .container{
+        align-items: center;
+        .condos-detail{
+            gap: 24px;
+            justify-content: center;
+           .-font-700-24{
+            padding-bottom: 0;
+            }
+            .button{
+                padding-top: 8px;
+                a:hover{
+                    color:$main-color!important;
+                }
+                }
+            }
+        }
+    }
+    .executive{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+
+
+@media (max-width: 1200px) {
+    #facilities{
+        .container{
+            transform: none;
+            .carousel-content{
+                .main-name{
+                    padding-top: 170px;
+                }
+            }
+        }
+    }
+    .faciities-main{
+        padding: 40px 0;
+    }
+   
+    
+}
+@media (max-width:768px) {
+    #first-main-item{
+        padding-top: 440px;
+    }
+    
+}

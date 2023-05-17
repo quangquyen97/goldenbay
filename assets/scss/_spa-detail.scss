@@ -1,0 +1,79 @@
+#spa-page {
+    background-color: rgb(243, 248, 252);
+    .container {
+        .feature-content {
+            padding-bottom: 40px;
+            h2{
+                color:black!important;
+            }
+        }
+        .feature-carousel{
+            .main-carousel{
+                .owl-item{
+                    .item{
+                        padding-left: 0;
+                        .image-carousel{
+                            &::before{
+                                display: none;
+                            }
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        .offer-content{
+                            p,h5{
+                                color: black!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#spa-page-2{
+    border-bottom: 1px solid $main-color;
+    .container{
+        .feature-content{
+            text-align: center;
+        }
+        .feature-carousel{
+            .main-carousel{
+                .owl-item{
+                    .item{
+                            &::before{
+                               opacity: 1;
+                            }
+                            &::after{
+                                display: none;
+                            }
+                            .content-carousel{
+                                bottom: 0;
+                            }
+                        .offer-content{
+                            p,h5{
+                                color: black!important;
+                            }
+                        }
+                        &:hover{
+                            .content-carousel{
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    #spa-page-2{
+        .container{
+            .feature-content{
+                text-align: left;
+            }
+        }
+    }
+    
+}

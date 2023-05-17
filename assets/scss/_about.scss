@@ -1,0 +1,149 @@
+#about-page {
+    background-color: white;
+    .container {
+        .content-story {
+            h2 {
+                font-size: 30px;
+            }
+            .content-detail {
+                p {
+                    color: black;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+#mobile-break{
+    display: none;
+}
+#our-award {
+    background: #0b7dc2;
+    .container {
+        .feature-content {
+            padding-bottom: 80px;
+            .feature-main-content {
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    margin: auto;
+                    .-font-700-34 {
+                        color: white !important;
+                        padding-bottom: 32px;
+                    }
+                }
+            }
+        }
+        .award-carousel {
+            .item {
+                &::before {
+                    content: "";
+                    display: none;
+                }
+            }
+            .owl-dots {
+                display: block !important;
+                margin-top: 60px;
+
+                .owl-dot {
+                    span {
+                        background: #e2e2e2;
+                        opacity: 0.35;
+                    }
+                }
+                .active {
+                    span {
+                        background: #e2e2e2;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+#local-discovery {
+    .container {
+        align-items: start;
+        #pills-tab {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            h2 {
+                padding-bottom: 32px;
+            }
+            .nav-item {
+                // overflow: hidden;
+                margin-bottom: 24px;
+                .active {
+                    background: none;
+                    height: max-content;
+                    border-left: 1px solid $main-color !important;
+                    border-radius: 0;
+
+                    h3 {
+                        color: $main-color !important;
+                    }
+                    p {
+                        height: 84px !important;
+                        transition: all 0.3s ease !important;
+                    }
+                }
+                .nav-link {
+                    border-left: 1px solid gray;
+                    border-radius: 0;
+                    padding: 0 0 0 22px;
+                    h3 {
+                        color: black;
+                    }
+
+                    p {
+                        text-align: start;
+                        display: block;
+                        height: 0;
+                        overflow: hidden;
+                        transition: all 0.3s ease;
+                    }
+                }
+
+                align-items: center;
+            }
+        }
+    }
+}
+#contact-gallery {
+    padding-top: 80px;
+}
+
+@media (max-width: 990px) {
+    #local-discovery {
+        .container {
+            #pills-tab {
+                width: 100%;
+            }
+        }
+    }
+    #our-award .container .feature-content .content p {
+        padding: 0 0 60px 0;
+    }
+}
+@media (max-width: 768px) {
+    #about-main .container .carousel-content {
+        .content-intro {
+            top: 200px;
+        }
+        .filed-revervation {
+            form {
+                box-shadow: rgba(0, 0, 0, 0.15)1.95px  1.95px 1.95px 2.6px;
+                bottom: -415px;
+            }
+        }
+    }
+    #about-page {
+        padding-top: 420px;
+    }
+    #mobile-break{
+        display: block;
+    }
+}

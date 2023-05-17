@@ -1,0 +1,140 @@
+#special-detail {
+    .container {
+        .special-content {
+            padding: 56px 0;
+            p {
+                margin: auto;
+                width: 70%;
+                color: black;
+            }
+        }
+        .special-detail {
+            display: flex;
+            justify-content: space-between;
+            .package-inclusion {
+                width: 45%;
+                .package-header {
+                    padding-bottom: 32px;
+                }
+                .content {
+                    ul {
+                        padding-left: 16px;
+
+                        li {
+                            list-style: disc;
+                            padding-bottom: 17px;
+                            &::marker {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .terms {
+                width: 50%;
+                .term-header {
+                    padding-bottom: 32px;
+                }
+                .content {
+                    ul {
+                        padding-left: 16px;
+
+                        li {
+                            list-style: disc;
+                            padding-bottom: 17px;
+                            &::marker {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .button-end {
+            width: 100%;
+            text-align: center;
+            padding: 40px 0 80px;
+        }
+    }
+}
+.special-page-detail {
+    background: rgb(243, 248, 252) !important;
+    .container {
+        .special-detail-header {
+            padding-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 990px) {
+    #special-detail .container .special-content p {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #special-detail .container .special-detail {
+        flex-direction: column;
+        .package-inclusion,
+        .terms {
+            width: 100%;
+            text-align: justify;
+        }
+        .package-inclusion {
+            .package-header {
+                padding-bottom: 20px;
+            }
+        }
+        .terms {
+            padding-top: 20px;
+            .term-header {
+                padding-bottom: 20px;
+            }
+        }
+    }
+    #special-detail .container {
+        .button-end {
+            padding: 20px 0 40px 0;
+        }
+    }
+    .special-page-detail {
+        padding-top: 40px !important;
+        .container {
+            gap: 10px;
+            .special-detail-header {
+                padding-bottom: 0;
+            }
+            .owl-theme {
+                .item {
+                    width: 100%;
+                    .image-carousel {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                        .submit-bottom {
+                            padding-top: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 525px) {
+    .special-page-detail {
+        .container {
+            .special-detail-header {
+            }
+            .owl-theme {
+                .item {
+                    .image-carousel {
+                        img {
+                        }
+                        .submit-bottom {
+                            padding-top: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

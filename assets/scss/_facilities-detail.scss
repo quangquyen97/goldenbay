@@ -1,0 +1,145 @@
+#fancilities-room-detail {
+    .container {
+        .general-detail {
+            .room-desc {
+                width: 60%;
+            }
+        }
+        .information-img {
+            padding: 63px 0 0 0;
+            display: flex;
+            padding-bottom: 80px;
+            justify-content: space-between;
+            align-items: center;
+            .img-right {
+                position: relative;
+                .img-front {
+                    position: absolute;
+                    right: -20%;
+                    bottom: -25%;
+                }
+            }
+            .infomation-detail {
+                p {
+                    color: black;
+                    &:nth-child(2) {
+                        padding: 24px 0;
+                    }
+                }
+
+                width: 42%;
+                .menu{
+                    h3{
+                    padding:16px 0;
+    
+                    }
+                    ul{
+                        padding-left: 14px;
+                        li:first-child{
+                            padding-bottom: 24px;
+                          
+                        }
+                        li{
+                            list-style: disc;
+                            color: $main-color;
+                        }
+                        a{
+                            color: $main-color;
+                            text-decoration: underline;
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}
+#facilities-another-room {
+    .title-another {
+        padding-bottom: 40px;
+        display: block;
+    }
+    background-color: rgb(243, 248, 252);
+    .container {
+        align-items: center;
+        .condos-detail {
+            h2 {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .break-crumb {
+        padding: 16px 0 0 0;
+    }
+    #fancilities-room-detail {
+        padding: 40px 0;
+        .container {
+            .general-header {
+                padding-bottom: 10px;
+            }
+            .general-detail {
+                .room-desc {
+                    width: 70%;
+                }
+            }
+            .information-img {
+                .img-right {
+                    width: 40%;
+                    .img-front {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    #fancilities-room-detail {
+        .container {
+            .general-header {
+                padding-bottom: 10px;
+            }
+            .general-detail {
+                .room-desc {
+                    width: 100%;
+                }
+            }
+            .information-img {
+                padding-bottom: 0;
+                flex-direction: column;
+                gap: 100px;
+                .img-right {
+                    width: 100% !important;
+                    .img-front {
+                        right: -4%;
+                        bottom: -25%;
+                    }
+                }
+                .infomation-detail {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    #fancilities-room-detail {
+        .container {
+         
+            .information-img {
+                .img-right {
+                    
+                    .img-front {
+                        right: -4%;
+                        bottom: -15%;
+                        width: 40%;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,335 @@
+.break-crumb {
+    padding: 34px 0;
+}
+
+.condos-room-carousel {
+    .container {
+        padding-top: 10px;
+        .header-detail {
+            padding-bottom: 32px;
+        }
+        #carouselExampleIndicators {
+            height: 100%;
+            overflow: hidden;
+            .carousel-item {
+                height: fit-content;
+                img {
+                    width: 100%;
+                }
+            }
+            .carousel-indicators [data-bs-target] {
+                height: 120px;
+                width: 100%;
+                object-fit: fill;
+                text-indent: 0px;
+                opacity: 1;
+                filter: grayscale(0.5);
+                img {
+                    border: 1px solid white;
+                    transition: all 0.5s ease;
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+
+            .carousel-indicators {
+                margin: 0;
+                padding: 15px 10% 15px 10%;
+                background: rgb(0 0 0 / 30%);
+                justify-content: space-around;
+                margin: auto;
+                align-items: center;
+                .owl-stage {
+                    margin: auto;
+                }
+                .active {
+                    filter: grayscale(0);
+                    img {
+                        border: 5px solid white;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+            .carousel-control-prev {
+                opacity: 1 !important;
+                text-align: center;
+                height: fit-content;
+                top: 84%;
+                z-index: 2;
+
+                i {
+                    color: black;
+                    height: 48px;
+                    width: 48px;
+                    background: white;
+                    color: rgb(134, 134, 134);
+                    transition: all 0.3s ease;
+                    border-radius: 50%;
+                    line-height: 2.9;
+                    &:hover {
+                        color: white;
+                        background: $main-color;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+            .carousel-control-next {
+                opacity: 1 !important;
+                text-align: center;
+                height: fit-content;
+                top: 84%;
+                z-index: 2;
+                i {
+                    color: black;
+                    height: 48px;
+                    width: 48px;
+                    background: white;
+                    color: rgb(134, 134, 134);
+                    transition: all 0.3s ease;
+                    border-radius: 50%;
+                    line-height: 2.9;
+
+                    &:hover {
+                        color: white;
+                        background: $main-color;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.general-infomation {
+    padding: 80px 0;
+    .container {
+        .general-header {
+            padding-bottom: 32px;
+            h2 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 150%;
+                text-transform: uppercase;
+            }
+        }
+        .general-detail {
+            display: flex;
+            // gap: 62px;
+            justify-content: space-between;
+            .room-detail {
+                display: flex;
+                gap: 100px;
+                background-color: rgb(243, 248, 252);
+                padding: 32px 96px 32px 32px;
+                h5,
+                p {
+                    font-size: 15px;
+                    color: black;
+                    line-height: 1.5;
+                }
+                .room-title,
+                .room-info {
+                    display: flex;            
+                    flex-direction: column;
+                    gap: 16px;
+                }
+            }
+            .room-desc {
+                width: 55%;
+                p {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+.-font-700-24 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+
+    text-transform: uppercase;
+
+    color: #262626;
+}
+
+.facilities {
+    .container {
+        .facilities-header {
+            padding-bottom: 32px;
+        }
+        .facilities-list {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 24px;
+            .facilities-item {
+                color: black;
+                img {
+                    padding-right: 12px;
+                }
+            }
+        }
+    }
+}
+
+.policy {
+    padding: 80px 0 64px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .check-in-out-policy {
+            .check-header {
+                padding-bottom: 32px;
+            }
+            .policy-list {
+                padding-left: 15px;
+                ul {
+                    li {
+                        list-style: disc;
+                        list-style-position: initial;
+                        color: $main-color;
+                        .child-title {
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 150%;
+                            color: #262626;
+                            padding-bottom: 12px;
+                        }
+                        ul li {
+                            padding-bottom: 16px;
+                            color: #262626;
+                            list-style: none;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#other-room {
+    background: rgb(243, 248, 252);
+}
+@media (max-width:1200px) {
+    .condos-room-carousel {
+        .container{
+            #carouselExampleIndicators {
+                .carousel-indicators [data-bs-target]{
+                    height: 80px;
+                }
+                .carousel-control-prev,
+                .carousel-control-next {
+                    transform: scale(0.6);
+                    top: 82%;
+                }
+                .carousel-control-prev{
+                    left: -10px;
+                }
+                .carousel-control-next{
+                    right: -10px;
+                }
+            }
+        }
+       
+    }
+    .general-infomation .container .general-detail {
+        .room-desc {
+            width: 50%;
+        }
+        .room-detail{
+            padding-right: 32px;
+        }
+    }
+    .facilities .container .facilities-list {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width:990px) {
+    .condos-room-carousel {
+        padding-top: 0;
+        .container {
+        
+            #carouselExampleIndicators {
+                .carousel-control-prev,
+                .carousel-control-next {
+      
+                    top: 76%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .break-crumb {
+        padding: 10px 0;
+        .breadcrumb {
+            margin-bottom: 0;
+        }
+    }
+    .condos-room-carousel {
+        padding-top: 0;
+        .container {
+            .header-detail {
+                padding-bottom: 10px;
+            }
+            #carouselExampleIndicators {
+                .carousel-indicators {
+                    display: none;
+                }
+                .carousel-control-prev,
+                .carousel-control-next {
+      
+                    top: 37%;
+                }
+            }
+        }
+    }
+    .general-infomation {
+        padding: 40px 0;
+        .container {
+            .general-header {
+                padding-bottom: 10px;
+            }
+            .general-detail {
+                flex-wrap: wrap;
+                .room-detail {
+                    width: 100%;
+                    padding: 32px 10px 32px 10px;
+                    gap: 25px;
+                }
+                gap: 20px;
+                .room-desc {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .facilities {
+        .container {
+            .facilities-header {
+                padding-bottom: 15px;
+            }
+            .facilities-list {
+                grid-template-columns: auto;
+                gap: 15px;
+            }
+        }
+    }
+    .policy {
+        padding: 40px 0 30px 0;
+        .container {
+            .check-in-out-policy {
+                .check-header {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+    #other-room{
+        padding:40px 0;
+    }
+}

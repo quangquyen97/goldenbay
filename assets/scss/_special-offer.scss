@@ -1,0 +1,150 @@
+#special-offer-page {
+    background-color: white;
+    .container {
+        .feature-carousel {
+            .owl-theme {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 30px;
+                .item {
+                    // overflow: hidden;
+                    padding-top:10px;
+                    position: relative;
+                    .offer-content {
+                        width: 80%;
+                        padding-top: 22px;
+                        h5 {
+                            color: black;
+                        }
+                        p {
+                            color: black;
+                            text-align: left;
+                            padding-top: 16px;
+                        }
+                    }
+                    .image-carousel {
+                        position: relative;
+                        z-index: 2;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0%;
+                            bottom: 0%;
+                            height: 100%;
+                            opacity: 0;
+                            width: 100%;
+                            transition: all 0.3s ease-in-out;
+                            background: linear-gradient(
+                                180deg,
+                                rgba(255, 255, 255, 0) 0%,
+                                rgba(0, 0, 0, 0.8099833683) 100%
+                            );
+                        }
+
+                        .submit-bottom {
+                            opacity: 0;
+                            display: flex;
+                            gap: 10px;
+                            position: absolute;
+                            left: 50%;
+                            white-space: nowrap;
+                            // right: 40%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            transition: all 0.3s ease;
+                            .view-detail-main {
+                                background: none;
+                                border: 1px solid white;
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    background: white;
+                                    transition: all 0.3s linear;
+                                    border-color: $main-color;
+                                }
+                            }
+                        }
+                        &:hover {
+                            &::before {
+                                opacity: 1;
+                                transition: all 0.3s ease;
+                            }
+                            .submit-bottom {
+                                opacity: 1;
+                                transition: all 0.3s ease;
+                            }
+                        }
+                    }
+                    .discount {
+                        position: absolute;
+                        top: 20px;
+                        left: -10px;
+                        z-index: 2;
+                        p {
+                            display: block;
+                            padding: 5px 7px;
+                            background: $main-color;
+                            border-radius: 4px;
+                            color: white;
+                        }
+                    }
+                    .shape-carousel {
+                        &::after {
+                            position: absolute;
+                            top: 28px;
+                            left: -4px;
+                            height: 30px;
+                            width: 40px;
+                            background: #0b7dc2;
+                            content: "";
+                            transform: rotate(38deg);
+                            z-index: -3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    #special-offer-page{
+        .container{
+            .feature-carousel{
+                .owl-theme {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    #special-offer-page{
+        padding-top: 420px;
+        .container{
+            .feature-carousel{
+                .owl-theme {
+                
+                    display: grid;
+                    grid-template-columns: auto;
+                    .item{
+                        margin:auto;
+                        .submit-bottom{
+                            .view-detail-main{
+                                color: $main-color;
+                                border-color: $main-color!important;
+                                &:hover{
+                                    background: $main-color!important;
+                                    color: white!important
+                                }
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}

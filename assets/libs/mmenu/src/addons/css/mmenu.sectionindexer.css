@@ -1,0 +1,35 @@
+:root {
+  --mm-sectionindexer-size: 20px;
+}
+
+.mm-sectionindexer {
+  background: inherit;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  width: var(--mm-sectionindexer-size);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-end: calc(-1 * var(--mm-sectionindexer-size));
+  z-index: 5;
+  transition-property: inset-inline-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.mm-sectionindexer a {
+  color: var(--mm-color-text-dimmed);
+  line-height: 1;
+  text-decoration: none;
+  display: block;
+}
+.mm-sectionindexer ~ .mm-panel {
+  padding-inline-end: 0;
+}
+.mm-sectionindexer--active {
+  right: 0;
+}
+.mm-sectionindexer--active ~ .mm-panel {
+  padding-inline-end: var(--mm-sectionindexer-size);
+}/*# sourceMappingURL=mmenu.sectionindexer.css.map */
